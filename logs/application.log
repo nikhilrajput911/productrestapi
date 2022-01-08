@@ -1,0 +1,708 @@
+2021-09-26 13:56:31.926  INFO 22236 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 22236 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 13:56:31.948  INFO 22236 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 13:56:34.117  INFO 22236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 13:56:34.185  INFO 22236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2021-09-26 13:56:35.065  INFO 22236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 13:56:35.075  INFO 22236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 13:56:35.075  INFO 22236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 13:56:35.404  INFO 22236 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 13:56:35.405  INFO 22236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3353 ms
+2021-09-26 13:56:38.602  INFO 22236 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 13:56:39.231  INFO 22236 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 13:56:46.377  INFO 22236 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 13:56:46.383  WARN 22236 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 13:56:46.616  INFO 22236 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 13:56:46.629  INFO 22236 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 13:56:48.746  INFO 22236 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - 4fa00dca-2388-4bc4-8d1e-84223a5a54d9 this
+]
+
+2021-09-26 13:56:48.794  INFO 22236 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 13:56:49.374  INFO 22236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 13:56:50.475  INFO 22236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 13:56:50.841  INFO 22236 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 13:56:51.405  INFO 22236 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 13:56:51.749  INFO 22236 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 13:56:52.204  INFO 22236 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 13:56:53.904  INFO 22236 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 13:56:53.918  INFO 22236 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 13:56:55.126  WARN 22236 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 13:56:55.455  INFO 22236 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 13:56:55.569  INFO 22236 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 13:56:55.945  INFO 22236 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7be3f7d2-f7fe-43bf-b0dc-348cdb17f55f
+
+2021-09-26 13:56:56.152  INFO 22236 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70273633, org.springframework.security.web.context.SecurityContextPersistenceFilter@47eff554, org.springframework.security.web.header.HeaderWriterFilter@46b55a0e, org.springframework.web.filter.CorsFilter@1f641fb7, org.springframework.security.web.csrf.CsrfFilter@6f69b0ba, org.springframework.security.web.authentication.logout.LogoutFilter@3efb863c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2696b687, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2ecc4be7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69dc7b24, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@52849956, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54b35809, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f877009, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@297454f7, org.springframework.security.web.session.SessionManagementFilter@31b67d61, org.springframework.security.web.access.ExceptionTranslationFilter@71098fb3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36f497b1]
+2021-09-26 13:56:56.296  INFO 22236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 13:56:56.298  INFO 22236 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 13:56:56.323  INFO 22236 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 13:56:56.391  INFO 22236 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 13:56:56.592  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-09-26 13:56:56.597  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2021-09-26 13:56:56.600  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-09-26 13:56:56.603  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2021-09-26 13:56:56.606  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2021-09-26 13:56:56.608  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2021-09-26 13:56:56.610  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2021-09-26 13:56:56.612  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2021-09-26 13:56:56.614  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2021-09-26 13:56:56.616  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2021-09-26 13:56:56.618  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2021-09-26 13:56:56.621  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2021-09-26 13:56:56.623  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2021-09-26 13:56:56.626  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2021-09-26 13:56:56.628  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2021-09-26 13:56:56.630  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2021-09-26 13:56:56.632  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2021-09-26 13:56:56.634  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2021-09-26 13:56:56.636  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2021-09-26 13:56:56.639  INFO 22236 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2021-09-26 13:56:56.702  INFO 22236 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 25.359 seconds (JVM running for 36.042)
+2021-09-26 13:57:37.517  INFO 22236 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 13:57:37.518  INFO 22236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 13:57:37.521  INFO 22236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-09-26 14:01:15.896  INFO 22236 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 14:01:18.163  INFO 22236 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 14:01:18.168  INFO 22236 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 14:01:18.184  INFO 22236 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-26 14:02:19.314  INFO 22052 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 22052 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 14:02:19.318  INFO 22052 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 14:02:22.067  INFO 22052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 14:02:22.148  INFO 22052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
+2021-09-26 14:02:23.076  INFO 22052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 14:02:23.086  INFO 22052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 14:02:23.086  INFO 22052 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 14:02:23.316  INFO 22052 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 14:02:23.317  INFO 22052 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3897 ms
+2021-09-26 14:02:26.830  INFO 22052 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 14:02:27.640  INFO 22052 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 14:02:33.056  INFO 22052 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 14:02:33.062  WARN 22052 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 14:02:33.415  INFO 22052 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 14:02:33.428  INFO 22052 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 14:02:35.278  INFO 22052 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - 97b1dac5-0163-4ea3-9472-3615b3952140 this
+]
+
+2021-09-26 14:02:35.326  INFO 22052 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 14:02:35.397  INFO 22052 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=1.3G, swap.space.total=14.4G, swap.space.free=3.4G, heap.memory.used=136.6M, heap.memory.free=198.4M, heap.memory.total=335.0M, heap.memory.max=1.8G, heap.memory.used/total=40.79%, heap.memory.used/max=7.61%, minor.gc.count=9, minor.gc.time=166ms, major.gc.count=2, major.gc.time=188ms, load.process=23.70%, load.system=72.08%, load.systemAverage=n/a thread.count=50, thread.peakCount=50, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 14:02:35.557  INFO 22052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 14:02:35.751  INFO 22052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 14:02:35.812  INFO 22052 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 14:02:35.886  INFO 22052 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 14:02:36.089  INFO 22052 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 14:02:36.422  INFO 22052 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 14:02:37.385  INFO 22052 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 14:02:37.399  INFO 22052 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 14:02:38.039  WARN 22052 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 14:02:38.414  INFO 22052 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 14:02:38.564  INFO 22052 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 14:02:39.016  INFO 22052 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cec15baf-439d-4a67-8e41-2c901812719c
+
+2021-09-26 14:02:39.233  INFO 22052 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69dc7b24, org.springframework.security.web.context.SecurityContextPersistenceFilter@54b35809, org.springframework.security.web.header.HeaderWriterFilter@31b67d61, org.springframework.web.filter.CorsFilter@297454f7, org.springframework.security.web.csrf.CsrfFilter@64eb14da, org.springframework.security.web.authentication.logout.LogoutFilter@483fe83a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57f83c82, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5357de0e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@602b7944, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@70273633, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72ce8a9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14b4ce6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f8d4b51, org.springframework.security.web.session.SessionManagementFilter@47eff554, org.springframework.security.web.access.ExceptionTranslationFilter@2ebcbf9d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1117cc7c]
+2021-09-26 14:02:39.394  INFO 22052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 14:02:39.396  INFO 22052 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 14:02:39.422  INFO 22052 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 14:02:39.502  INFO 22052 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 14:02:39.713  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-09-26 14:02:39.715  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-09-26 14:02:39.718  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2021-09-26 14:02:39.720  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2021-09-26 14:02:39.722  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2021-09-26 14:02:39.725  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2021-09-26 14:02:39.727  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2021-09-26 14:02:39.729  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2021-09-26 14:02:39.732  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2021-09-26 14:02:39.734  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2021-09-26 14:02:39.736  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2021-09-26 14:02:39.738  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2021-09-26 14:02:39.740  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2021-09-26 14:02:39.742  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2021-09-26 14:02:39.746  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2021-09-26 14:02:39.748  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2021-09-26 14:02:39.750  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2021-09-26 14:02:39.752  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2021-09-26 14:02:39.755  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2021-09-26 14:02:39.759  INFO 22052 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2021-09-26 14:02:39.833  INFO 22052 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 21.237 seconds (JVM running for 25.577)
+2021-09-26 14:03:17.838  INFO 22052 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 14:03:17.838  INFO 22052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 14:03:17.842  INFO 22052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-09-26 14:04:35.689  INFO 22052 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=1.2G, swap.space.total=14.4G, swap.space.free=3.3G, heap.memory.used=341.0M, heap.memory.free=121.5M, heap.memory.total=462.5M, heap.memory.max=1.8G, heap.memory.used/total=73.72%, heap.memory.used/max=18.98%, minor.gc.count=10, minor.gc.time=197ms, major.gc.count=3, major.gc.time=487ms, load.process=0.61%, load.system=75.81%, load.systemAverage=n/a thread.count=65, thread.peakCount=67, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 14:06:18.702 ERROR 22052 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/productrestapi] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: No cache could be resolved for 'Builder[public com.nikhil.entities.Product com.nikhil.controllers.ProductRestController.getProduct(int)] caches=[] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'' using resolver 'org.springframework.cache.interceptor.SimpleCacheResolver@24630fca'. At least one cache should be provided per cache operation.] with root cause
+
+java.lang.IllegalStateException: No cache could be resolved for 'Builder[public com.nikhil.entities.Product com.nikhil.controllers.ProductRestController.getProduct(int)] caches=[] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'' using resolver 'org.springframework.cache.interceptor.SimpleCacheResolver@24630fca'. At least one cache should be provided per cache operation.
+	at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:255) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.<init>(CacheAspectSupport.java:724) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.<init>(CacheAspectSupport.java:615) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.nikhil.controllers.ProductRestController$$EnhancerBySpringCGLIB$$5ffdeedd.getProduct(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:149) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.5.2.jar:5.5.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.5.4.jar:2.5.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+
+2021-09-26 14:07:57.566  INFO 22052 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 14:07:59.593  INFO 22052 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 14:07:59.597  INFO 22052 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 14:07:59.613  INFO 22052 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-26 14:16:52.807  INFO 19940 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 19940 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 14:16:52.813  INFO 19940 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 14:16:54.918  INFO 19940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 14:16:54.993  INFO 19940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
+2021-09-26 14:16:56.016  INFO 19940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 14:16:56.030  INFO 19940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 14:16:56.031  INFO 19940 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 14:16:56.314  INFO 19940 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 14:16:56.315  INFO 19940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3377 ms
+2021-09-26 14:17:00.442  INFO 19940 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 14:17:01.120  INFO 19940 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 14:17:06.024  INFO 19940 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 14:17:06.032  WARN 19940 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 14:17:06.386  INFO 19940 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 14:17:06.406  INFO 19940 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 14:17:09.048  INFO 19940 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - 2039ceca-d025-42da-bb56-3b4f94718900 this
+]
+
+2021-09-26 14:17:09.076  INFO 19940 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 14:17:09.190  INFO 19940 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=1.4G, swap.space.total=14.4G, swap.space.free=3.3G, heap.memory.used=140.7M, heap.memory.free=193.8M, heap.memory.total=334.5M, heap.memory.max=1.8G, heap.memory.used/total=40.69%, heap.memory.used/max=7.58%, minor.gc.count=9, minor.gc.time=128ms, major.gc.count=2, major.gc.time=145ms, load.process=8.35%, load.system=70.03%, load.systemAverage=n/a thread.count=50, thread.peakCount=50, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 14:17:09.463  INFO 19940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 14:17:09.803  INFO 19940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 14:17:09.989  INFO 19940 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 14:17:10.117  INFO 19940 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 14:17:10.312  INFO 19940 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 14:17:10.519  INFO 19940 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 14:17:11.648  INFO 19940 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 14:17:11.664  INFO 19940 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 14:17:12.610  WARN 19940 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 14:17:13.285  INFO 19940 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 14:17:13.449  INFO 19940 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 14:17:13.873  INFO 19940 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f33d413c-c8d7-4853-b121-504519fe934c
+
+2021-09-26 14:17:14.066  INFO 19940 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7eea934d, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ac77269, org.springframework.security.web.header.HeaderWriterFilter@528a16fb, org.springframework.web.filter.CorsFilter@4700963e, org.springframework.security.web.csrf.CsrfFilter@35fac3ba, org.springframework.security.web.authentication.logout.LogoutFilter@2665a2e7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3dad8bde, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@478cebdb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@153d14e3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7fc5a558, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7eb774c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@361483eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b17759c, org.springframework.security.web.session.SessionManagementFilter@758d0555, org.springframework.security.web.access.ExceptionTranslationFilter@193d7ac7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73818435]
+2021-09-26 14:17:14.201  INFO 19940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 14:17:14.205  INFO 19940 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 14:17:14.239  INFO 19940 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 14:17:14.323  INFO 19940 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 14:17:14.597  INFO 19940 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 22.631 seconds (JVM running for 26.978)
+2021-09-26 14:17:27.753  INFO 19940 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 14:17:27.753  INFO 19940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 14:17:27.756  INFO 19940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-09-26 14:19:38.631  INFO 19940 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 14:19:41.152  INFO 19940 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 14:19:41.157  INFO 19940 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 14:19:41.175  INFO 19940 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-26 14:23:50.772  INFO 15744 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 15744 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 14:23:50.794  INFO 15744 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 14:23:53.351  INFO 15744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 14:23:53.471  INFO 15744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interfaces.
+2021-09-26 14:23:54.739  INFO 15744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 14:23:54.750  INFO 15744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 14:23:54.750  INFO 15744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 14:23:54.972  INFO 15744 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 14:23:54.973  INFO 15744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4057 ms
+2021-09-26 14:23:58.217  INFO 15744 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 14:23:58.807  INFO 15744 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 14:24:03.617  INFO 15744 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 14:24:03.626  WARN 15744 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 14:24:03.936  INFO 15744 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 14:24:03.953  INFO 15744 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 14:24:06.350  INFO 15744 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - b422bd4c-a8a3-4b7e-9600-5d06a2330d19 this
+]
+
+2021-09-26 14:24:06.396  INFO 15744 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 14:24:06.514  INFO 15744 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=1.3G, swap.space.total=14.4G, swap.space.free=3.4G, heap.memory.used=141.2M, heap.memory.free=193.3M, heap.memory.total=334.5M, heap.memory.max=1.8G, heap.memory.used/total=42.21%, heap.memory.used/max=7.86%, minor.gc.count=9, minor.gc.time=118ms, major.gc.count=2, major.gc.time=146ms, load.process=8.97%, load.system=72.49%, load.systemAverage=n/a thread.count=50, thread.peakCount=50, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 14:24:06.789  INFO 15744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 14:24:07.156  INFO 15744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 14:24:07.278  INFO 15744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 14:24:07.408  INFO 15744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 14:24:07.737  INFO 15744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 14:24:07.955  INFO 15744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 14:24:09.203  INFO 15744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 14:24:09.219  INFO 15744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 14:24:09.948  WARN 15744 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 14:24:10.309  INFO 15744 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 14:24:10.476  INFO 15744 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 14:24:11.076  INFO 15744 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d535c67e-eed2-425b-80f5-f64e0e15026d
+
+2021-09-26 14:24:11.283  INFO 15744 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f82e3cf, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c108c05, org.springframework.security.web.header.HeaderWriterFilter@2a191f83, org.springframework.web.filter.CorsFilter@3a44993c, org.springframework.security.web.csrf.CsrfFilter@74babce8, org.springframework.security.web.authentication.logout.LogoutFilter@71f437d7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@542754be, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3a42145, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6b6606d1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3dad8bde, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d0333c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@758d0555, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27605b87, org.springframework.security.web.session.SessionManagementFilter@3adbd038, org.springframework.security.web.access.ExceptionTranslationFilter@346690d6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3fdbb7ee]
+2021-09-26 14:24:11.443  INFO 15744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 14:24:11.447  INFO 15744 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 14:24:11.479  INFO 15744 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 14:24:11.604  INFO 15744 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 14:24:11.887  INFO 15744 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 22.175 seconds (JVM running for 27.795)
+2021-09-26 14:24:31.016  INFO 15744 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 14:24:31.017  INFO 15744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 14:24:31.020  INFO 15744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-09-26 14:28:22.164  INFO 15744 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 14:28:24.518  INFO 15744 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 14:28:24.522  INFO 15744 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 14:28:24.541  INFO 15744 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-26 14:31:29.148  INFO 540 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 540 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 14:31:29.183  INFO 540 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 14:31:31.665  INFO 540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 14:31:31.754  INFO 540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interfaces.
+2021-09-26 14:31:32.887  INFO 540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 14:31:32.898  INFO 540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 14:31:32.898  INFO 540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 14:31:33.292  INFO 540 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 14:31:33.302  INFO 540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3859 ms
+2021-09-26 14:31:37.819  INFO 540 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 14:31:38.704  INFO 540 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 14:31:45.493  INFO 540 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 14:31:45.499  WARN 540 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 14:31:45.814  INFO 540 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 14:31:45.830  INFO 540 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 14:31:48.105  INFO 540 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - dca908fc-1c6b-4074-9c5e-2249160f5a9b this
+]
+
+2021-09-26 14:31:48.128  INFO 540 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 14:31:48.415  INFO 540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 14:31:48.679  INFO 540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 14:31:48.773  INFO 540 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 14:31:49.022  INFO 540 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 14:31:49.325  INFO 540 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 14:31:49.526  INFO 540 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 14:31:50.671  INFO 540 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 14:31:50.686  INFO 540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 14:31:51.541  WARN 540 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 14:31:52.311  INFO 540 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 14:31:52.491  INFO 540 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 14:31:53.050  INFO 540 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3a6e111a-54d4-41c0-8622-8d8206bb7ba6
+
+2021-09-26 14:31:53.307  INFO 540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47fc9ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@58189b85, org.springframework.security.web.header.HeaderWriterFilter@20e41f13, org.springframework.web.filter.CorsFilter@1b5d1d9, org.springframework.security.web.csrf.CsrfFilter@48788853, org.springframework.security.web.authentication.logout.LogoutFilter@7e532f2d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2352c21f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@688efeb2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@703a2bc9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@95f1422, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e41e6ad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3897f9ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@790d629a, org.springframework.security.web.session.SessionManagementFilter@3fa50a24, org.springframework.security.web.access.ExceptionTranslationFilter@5464aeec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5186b78a]
+2021-09-26 14:31:53.484  INFO 540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 14:31:53.486  INFO 540 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 14:31:53.510  INFO 540 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 14:31:53.608  INFO 540 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 14:31:54.145  INFO 540 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 25.791 seconds (JVM running for 30.294)
+2021-09-26 14:32:12.006  INFO 540 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 14:32:12.007  INFO 540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 14:32:12.010  INFO 540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-09-26 17:25:03.627  INFO 540 --- [hz.hazel-instance.cached.thread-2] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.1.21]:5701 [dev] [4.1.5] System clock apparently jumped from 2021-09-26 15:36:10.783 to 2021-09-26 17:25:03.620 since last heartbeat (+6527837 ms)
+2021-09-26 17:25:03.628  WARN 540 --- [hz.hazel-instance.cached.thread-2] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.1.21]:5701 [dev] [4.1.5] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 6527837 ms, Heartbeat-Timeout: 60000 ms
+2021-09-26 17:25:04.207  WARN 540 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.1.21]:5701 [dev] [4.1.5] MonitorInvocationsTask delayed 6531404 ms
+2021-09-26 17:25:04.208  WARN 540 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.1.21]:5701 [dev] [4.1.5] BroadcastOperationControlTask delayed 6528415 ms
+2021-09-26 17:25:10.452  WARN 540 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h49m21s547ms447µs500ns).
+2021-09-26 17:25:11.510  INFO 540 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=1.5G, swap.space.total=14.4G, swap.space.free=3.6G, heap.memory.used=126.0M, heap.memory.free=347.5M, heap.memory.total=473.5M, heap.memory.max=1.8G, heap.memory.used/total=26.61%, heap.memory.used/max=7.01%, minor.gc.count=11, minor.gc.time=227ms, major.gc.count=3, major.gc.time=472ms, load.process=1.26%, load.system=100.00%, load.systemAverage=n/a thread.count=93, thread.peakCount=93, cluster.timeDiff=-6527837, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 17:35:25.478  INFO 540 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 17:35:29.708  INFO 540 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 17:35:29.901  INFO 540 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 17:35:29.915  INFO 540 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-26 17:49:07.253  INFO 4820 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 4820 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 17:49:07.320  INFO 4820 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 17:49:09.987  INFO 4820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 17:49:10.086  INFO 4820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interfaces.
+2021-09-26 17:49:12.085  INFO 4820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 17:49:12.103  INFO 4820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 17:49:12.103  INFO 4820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 17:49:12.490  INFO 4820 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 17:49:12.490  INFO 4820 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5017 ms
+2021-09-26 17:49:16.741  INFO 4820 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 17:49:17.516  INFO 4820 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 17:49:22.601  INFO 4820 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 17:49:22.612  WARN 4820 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 17:49:23.183  INFO 4820 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 17:49:23.206  INFO 4820 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 17:49:25.528  INFO 4820 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - abab0c4e-18f5-4a45-ae1d-fffc31aad794 this
+]
+
+2021-09-26 17:49:25.622  INFO 4820 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 17:49:25.978  INFO 4820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 17:49:26.918  INFO 4820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 17:49:27.043  INFO 4820 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 17:49:27.138  INFO 4820 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=642.0M, swap.space.total=14.4G, swap.space.free=2.8G, heap.memory.used=182.0M, heap.memory.free=131.0M, heap.memory.total=313.0M, heap.memory.max=1.8G, heap.memory.used/total=58.15%, heap.memory.used/max=10.13%, minor.gc.count=9, minor.gc.time=112ms, major.gc.count=2, major.gc.time=179ms, load.process=0.00%, load.system=75.95%, load.systemAverage=n/a thread.count=54, thread.peakCount=54, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 17:49:27.315  INFO 4820 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 17:49:27.813  INFO 4820 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 17:49:28.142  INFO 4820 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 17:49:29.594  INFO 4820 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 17:49:29.610  INFO 4820 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 17:49:30.314  WARN 4820 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 17:49:30.759  INFO 4820 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 17:49:30.918  INFO 4820 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 17:49:31.330  INFO 4820 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c1316c75-d82c-497c-be65-03c4792295ca
+
+2021-09-26 17:49:31.563  INFO 4820 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17d0d3d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d1f3639, org.springframework.security.web.header.HeaderWriterFilter@6ac83e67, org.springframework.web.filter.CorsFilter@39fc17be, org.springframework.security.web.csrf.CsrfFilter@516155b5, org.springframework.security.web.authentication.logout.LogoutFilter@43cc7951, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@281963c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2e5c7cd5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@106edde4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@76cbee13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74bcf1ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ffc4195, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d9cf71d, org.springframework.security.web.session.SessionManagementFilter@12811f95, org.springframework.security.web.access.ExceptionTranslationFilter@483ed60e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@201b52f7]
+2021-09-26 17:49:31.795  INFO 4820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 17:49:31.796  INFO 4820 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 17:49:31.826  INFO 4820 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 17:49:31.911  INFO 4820 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 17:49:32.195  INFO 4820 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 25.706 seconds (JVM running for 32.915)
+2021-09-26 17:50:08.864  INFO 4820 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 17:50:08.864  INFO 4820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 17:50:08.868  INFO 4820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-09-26 17:51:27.396  INFO 4820 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=842.5M, swap.space.total=14.4G, swap.space.free=2.7G, heap.memory.used=276.4M, heap.memory.free=153.6M, heap.memory.total=430.0M, heap.memory.max=1.8G, heap.memory.used/total=64.27%, heap.memory.used/max=15.39%, minor.gc.count=10, minor.gc.time=147ms, major.gc.count=3, major.gc.time=480ms, load.process=0.12%, load.system=81.58%, load.systemAverage=n/a thread.count=59, thread.peakCount=60, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 17:57:11.446  INFO 4820 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 17:57:13.569  INFO 4820 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 17:57:13.575  INFO 4820 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 17:57:13.596  INFO 4820 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-26 17:58:00.957  INFO 4604 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 4604 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 17:58:00.965  INFO 4604 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 17:58:03.205  INFO 4604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 17:58:03.285  INFO 4604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+2021-09-26 17:58:04.343  INFO 4604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 17:58:04.362  INFO 4604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 17:58:04.362  INFO 4604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 17:58:04.622  INFO 4604 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 17:58:04.623  INFO 4604 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3493 ms
+2021-09-26 17:58:08.435  INFO 4604 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 17:58:09.103  INFO 4604 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 17:58:13.651  INFO 4604 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 17:58:13.659  WARN 4604 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 17:58:14.067  INFO 4604 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 17:58:14.090  INFO 4604 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 17:58:16.594  INFO 4604 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - 0d803558-a64b-451d-96a6-127db1af0254 this
+]
+
+2021-09-26 17:58:16.615  INFO 4604 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 17:58:16.796  INFO 4604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 17:58:17.045  INFO 4604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 17:58:17.102  INFO 4604 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 17:58:17.219  INFO 4604 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 17:58:17.489  INFO 4604 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 17:58:17.706  INFO 4604 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 17:58:18.893  INFO 4604 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 17:58:18.906  INFO 4604 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 17:58:19.570  WARN 4604 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 17:58:19.971  INFO 4604 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 17:58:20.126  INFO 4604 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 17:58:21.039  INFO 4604 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bc6b117, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ac83e67, org.springframework.security.web.header.HeaderWriterFilter@483ed60e, org.springframework.web.filter.CorsFilter@2de07c57, org.springframework.security.web.csrf.CsrfFilter@28fef9a2, org.springframework.security.web.authentication.logout.LogoutFilter@453439e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22d47f09, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3e4636c3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@76cbee13, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1b881f1f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12811f95, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a11efe6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59d09ff3, org.springframework.security.web.session.SessionManagementFilter@7a14ab66, org.springframework.security.web.access.ExceptionTranslationFilter@5b31a9e3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d9bccfe]
+2021-09-26 17:58:21.163  INFO 4604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 17:58:21.164  INFO 4604 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 17:58:21.199  INFO 4604 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 17:58:21.305  INFO 4604 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 17:58:21.530  INFO 4604 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 21.336 seconds (JVM running for 25.935)
+2021-09-26 17:58:39.859  INFO 4604 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 17:58:39.859  INFO 4604 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 17:58:39.862  INFO 4604 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-09-26 17:59:17.917  INFO 4604 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=842.2M, swap.space.total=14.4G, swap.space.free=2.2G, heap.memory.used=258.3M, heap.memory.free=154.2M, heap.memory.total=412.5M, heap.memory.max=1.8G, heap.memory.used/total=62.63%, heap.memory.used/max=14.38%, minor.gc.count=11, minor.gc.time=168ms, major.gc.count=3, major.gc.time=432ms, load.process=2.53%, load.system=100.00%, load.systemAverage=n/a thread.count=59, thread.peakCount=59, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 17:59:37.995  INFO 4604 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=720.8M, swap.space.total=14.4G, swap.space.free=2.1G, heap.memory.used=259.0M, heap.memory.free=153.5M, heap.memory.total=412.5M, heap.memory.max=1.8G, heap.memory.used/total=62.78%, heap.memory.used/max=14.42%, minor.gc.count=11, minor.gc.time=168ms, major.gc.count=3, major.gc.time=432ms, load.process=0.82%, load.system=71.44%, load.systemAverage=n/a thread.count=58, thread.peakCount=59, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 18:08:39.142  INFO 4604 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=1.0G, swap.space.total=14.4G, swap.space.free=2.0G, heap.memory.used=308.5M, heap.memory.free=104.0M, heap.memory.total=412.5M, heap.memory.max=1.8G, heap.memory.used/total=74.79%, heap.memory.used/max=17.18%, minor.gc.count=11, minor.gc.time=168ms, major.gc.count=3, major.gc.time=432ms, load.process=0.29%, load.system=99.90%, load.systemAverage=n/a thread.count=65, thread.peakCount=67, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 18:20:34.888  INFO 4604 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 18:20:41.099  INFO 4604 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 18:20:41.105  INFO 4604 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 18:20:41.164  INFO 4604 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-26 18:23:42.315  INFO 20144 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 20144 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 18:23:42.320  INFO 20144 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 18:23:44.542  INFO 20144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 18:23:44.625  INFO 20144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2021-09-26 18:23:45.689  INFO 20144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 18:23:45.702  INFO 20144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 18:23:45.702  INFO 20144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 18:23:45.956  INFO 20144 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 18:23:45.957  INFO 20144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3524 ms
+2021-09-26 18:23:49.316  INFO 20144 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 18:23:50.025  INFO 20144 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 18:23:54.529  INFO 20144 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 18:23:54.537  WARN 20144 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 18:23:54.955  INFO 20144 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 18:23:54.976  INFO 20144 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 18:23:57.007  INFO 20144 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - a977bf1c-e08b-4cca-b7de-1e69c4f8d638 this
+]
+
+2021-09-26 18:23:57.029  INFO 20144 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 18:23:57.112  INFO 20144 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.21]:5701 [dev] [4.1.5] processors=4, physical.memory.total=7.9G, physical.memory.free=1.3G, swap.space.total=14.4G, swap.space.free=2.6G, heap.memory.used=150.9M, heap.memory.free=150.6M, heap.memory.total=301.5M, heap.memory.max=1.8G, heap.memory.used/total=50.04%, heap.memory.used/max=8.40%, minor.gc.count=9, minor.gc.time=87ms, major.gc.count=2, major.gc.time=158ms, load.process=24.43%, load.system=88.83%, load.systemAverage=n/a thread.count=50, thread.peakCount=50, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-09-26 18:23:57.226  INFO 20144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 18:23:57.441  INFO 20144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 18:23:57.514  INFO 20144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 18:23:57.637  INFO 20144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 18:23:57.908  INFO 20144 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 18:23:58.118  INFO 20144 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 18:23:59.309  INFO 20144 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 18:23:59.325  INFO 20144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 18:24:00.073  WARN 20144 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 18:24:00.418  INFO 20144 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 18:24:00.565  INFO 20144 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 18:24:01.178  INFO 20144 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@106edde4, org.springframework.security.web.context.SecurityContextPersistenceFilter@74bcf1ab, org.springframework.security.web.header.HeaderWriterFilter@12811f95, org.springframework.web.filter.CorsFilter@4d9cf71d, org.springframework.security.web.csrf.CsrfFilter@44428583, org.springframework.security.web.authentication.logout.LogoutFilter@7533923b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18fa5af6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5b74bb75, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5c43cb12, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@17d0d3d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e6bbe63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e4636c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5db66c3, org.springframework.security.web.session.SessionManagementFilter@2d1f3639, org.springframework.security.web.access.ExceptionTranslationFilter@7a14ab66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57806346]
+2021-09-26 18:24:01.295  INFO 20144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 18:24:01.297  INFO 20144 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 18:24:01.326  INFO 20144 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 18:24:01.393  INFO 20144 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 18:24:01.621  INFO 20144 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 19.972 seconds (JVM running for 23.483)
+2021-09-26 18:24:06.811  INFO 20144 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 18:24:06.811  INFO 20144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 18:24:06.816  INFO 20144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-09-26 18:25:09.255  INFO 20144 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 18:25:11.648  INFO 20144 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 18:25:11.652  INFO 20144 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 18:25:11.670  INFO 20144 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-26 18:25:37.582  INFO 15648 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 15648 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 18:25:37.585  INFO 15648 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 18:25:39.579  INFO 15648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 18:25:39.649  INFO 15648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2021-09-26 18:25:40.569  INFO 15648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 18:25:40.579  INFO 15648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 18:25:40.579  INFO 15648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 18:25:40.832  INFO 15648 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 18:25:40.833  INFO 15648 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3107 ms
+2021-09-26 18:25:44.388  INFO 15648 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 18:25:44.873  INFO 15648 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 18:25:48.999  INFO 15648 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 18:25:49.006  WARN 15648 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 18:25:49.254  INFO 15648 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 18:25:49.271  INFO 15648 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 18:25:51.579  INFO 15648 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - 0ca1b7cf-98e2-4387-9c23-7d5b93162496 this
+]
+
+2021-09-26 18:25:51.599  INFO 15648 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 18:25:51.784  INFO 15648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 18:25:52.012  INFO 15648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 18:25:52.066  INFO 15648 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 18:25:52.127  INFO 15648 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 18:25:52.332  INFO 15648 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 18:25:52.486  INFO 15648 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 18:25:53.492  INFO 15648 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 18:25:53.507  INFO 15648 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 18:25:54.148  WARN 15648 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 18:25:54.433  INFO 15648 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 18:25:54.546  INFO 15648 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 18:25:55.177  INFO 15648 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@106edde4, org.springframework.security.web.context.SecurityContextPersistenceFilter@74bcf1ab, org.springframework.security.web.header.HeaderWriterFilter@12811f95, org.springframework.web.filter.CorsFilter@4d9cf71d, org.springframework.security.web.csrf.CsrfFilter@44428583, org.springframework.security.web.authentication.logout.LogoutFilter@7533923b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18fa5af6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5b74bb75, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5c43cb12, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@17d0d3d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e6bbe63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e4636c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5db66c3, org.springframework.security.web.session.SessionManagementFilter@2d1f3639, org.springframework.security.web.access.ExceptionTranslationFilter@7a14ab66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57806346]
+2021-09-26 18:25:55.319  INFO 15648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 18:25:55.322  INFO 15648 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 18:25:55.345  INFO 15648 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 18:25:55.405  INFO 15648 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 18:25:55.611  INFO 15648 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 18.559 seconds (JVM running for 22.4)
+2021-09-26 18:26:00.926  INFO 15648 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 18:26:00.926  INFO 15648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 18:26:00.928  INFO 15648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-09-26 18:27:08.118  INFO 15648 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 18:27:10.596  INFO 15648 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 18:27:10.599  INFO 15648 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 18:27:10.618  INFO 15648 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-26 18:27:46.265  INFO 10184 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 10184 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 18:27:46.270  INFO 10184 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 18:27:48.383  INFO 10184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 18:27:48.475  INFO 10184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
+2021-09-26 18:27:49.366  INFO 10184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 18:27:49.375  INFO 10184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 18:27:49.376  INFO 10184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 18:27:49.623  INFO 10184 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 18:27:49.624  INFO 10184 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3261 ms
+2021-09-26 18:27:52.492  INFO 10184 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 18:27:52.881  INFO 10184 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 18:27:57.016  INFO 10184 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 18:27:57.024  WARN 10184 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 18:27:57.316  INFO 10184 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 18:27:57.336  INFO 10184 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 18:27:59.488  INFO 10184 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - 063db043-b1e4-4106-89c1-cad1702dbd71 this
+]
+
+2021-09-26 18:27:59.518  INFO 10184 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 18:27:59.677  INFO 10184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 18:27:59.862  INFO 10184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 18:27:59.919  INFO 10184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 18:27:59.976  INFO 10184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 18:28:00.228  INFO 10184 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 18:28:00.360  INFO 10184 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 18:28:01.343  INFO 10184 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 18:28:01.360  INFO 10184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 18:28:01.966  WARN 10184 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 18:28:02.274  INFO 10184 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 18:28:02.393  INFO 10184 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 18:28:02.889  INFO 10184 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@106edde4, org.springframework.security.web.context.SecurityContextPersistenceFilter@74bcf1ab, org.springframework.security.web.header.HeaderWriterFilter@12811f95, org.springframework.web.filter.CorsFilter@4d9cf71d, org.springframework.security.web.csrf.CsrfFilter@44428583, org.springframework.security.web.authentication.logout.LogoutFilter@7533923b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18fa5af6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5b74bb75, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5c43cb12, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@17d0d3d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e6bbe63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e4636c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5db66c3, org.springframework.security.web.session.SessionManagementFilter@2d1f3639, org.springframework.security.web.access.ExceptionTranslationFilter@7a14ab66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57806346]
+2021-09-26 18:28:03.023  INFO 10184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 18:28:03.025  INFO 10184 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 18:28:03.051  INFO 10184 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 18:28:03.112  INFO 10184 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 18:28:03.341  INFO 10184 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 17.697 seconds (JVM running for 20.928)
+2021-09-26 18:28:10.174  INFO 10184 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 18:28:10.175  INFO 10184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 18:28:10.178  INFO 10184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-09-26 18:32:07.638  INFO 10184 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 18:32:10.869  INFO 10184 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 18:32:10.875  INFO 10184 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 18:32:10.895  INFO 10184 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-26 18:32:36.502  INFO 18808 --- [main] com.nikhil.ProductrestapiApplication     : Starting ProductrestapiApplication using Java 1.8.0_131 on DESKTOP-5NI609V with PID 18808 (D:\nikhil\software\STS\Project\productrestapi\target\classes started by admin in D:\nikhil\software\STS\Project\productrestapi)
+2021-09-26 18:32:36.506  INFO 18808 --- [main] com.nikhil.ProductrestapiApplication     : No active profile set, falling back to default profiles: default
+2021-09-26 18:32:38.571  INFO 18808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-26 18:32:38.655  INFO 18808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
+2021-09-26 18:32:39.566  INFO 18808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-26 18:32:39.576  INFO 18808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-26 18:32:39.577  INFO 18808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-26 18:32:39.790  INFO 18808 --- [main] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring embedded WebApplicationContext
+2021-09-26 18:32:39.791  INFO 18808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3176 ms
+2021-09-26 18:32:42.658  INFO 18808 --- [main] com.hazelcast.system                     : [192.168.1.21]:5701 [dev] [4.1.5] Hazelcast 4.1.5 (20210817 - 270c5be) starting at [192.168.1.21]:5701
+2021-09-26 18:32:43.050  INFO 18808 --- [main] c.h.s.d.integration.DiscoveryService     : [192.168.1.21]:5701 [dev] [4.1.5] No discovery strategy is applicable for auto-detection
+2021-09-26 18:32:47.074  INFO 18808 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.21]:5701 [dev] [4.1.5] Using Multicast discovery
+2021-09-26 18:32:47.079  WARN 18808 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.21]:5701 [dev] [4.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-09-26 18:32:47.344  INFO 18808 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.21]:5701 [dev] [4.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-09-26 18:32:47.359  INFO 18808 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTING
+2021-09-26 18:32:49.385  INFO 18808 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.21]:5701 [dev] [4.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.21]:5701 - 87fc3e8b-fb78-4bdf-839e-33d3dec73712 this
+]
+
+2021-09-26 18:32:49.401  INFO 18808 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.21]:5701 [dev] [4.1.5] [192.168.1.21]:5701 is STARTED
+2021-09-26 18:32:49.560  INFO 18808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-26 18:32:49.735  INFO 18808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-26 18:32:49.784  INFO 18808 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-26 18:32:49.843  INFO 18808 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-26 18:32:50.039  INFO 18808 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-26 18:32:50.173  INFO 18808 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-26 18:32:51.039  INFO 18808 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-26 18:32:51.051  INFO 18808 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 18:32:51.117  WARN 18808 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-26 18:32:51.971  INFO 18808 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-09-26 18:32:52.245  INFO 18808 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31cd0efa, org.springframework.security.web.context.SecurityContextPersistenceFilter@7910e307, org.springframework.security.web.header.HeaderWriterFilter@58ca6ba3, org.springframework.security.web.authentication.logout.LogoutFilter@6839d03b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6885f3f7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@52fec840, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3294102e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a013bdd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5aa334c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d3e5a05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a69b3cf, org.springframework.security.web.session.SessionManagementFilter@7676b2b9, org.springframework.security.web.access.ExceptionTranslationFilter@3b3f62d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5819ee0f]
+2021-09-26 18:32:52.283  INFO 18808 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-26 18:32:52.691  INFO 18808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productrestapi'
+2021-09-26 18:32:52.693  INFO 18808 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-26 18:32:52.714  INFO 18808 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-26 18:32:52.775  INFO 18808 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-26 18:32:52.986  INFO 18808 --- [main] com.nikhil.ProductrestapiApplication     : Started ProductrestapiApplication in 17.164 seconds (JVM running for 20.476)
+2021-09-26 18:33:01.171  INFO 18808 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/productrestapi]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-26 18:33:01.172  INFO 18808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-26 18:33:01.175  INFO 18808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-09-26 18:33:42.677  WARN 18808 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.nikhil.entities.Product com.nikhil.controllers.ProductRestController.createProduct(com.nikhil.entities.Product): [Field error in object 'product' on field 'price': rejected value [0]; codes [Min.product.price,Min.price,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [product.price,price]; arguments []; default message [price],1]; default message [The minimum price should be 1]] ]
+2021-09-26 18:34:15.760  INFO 18808 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-26 18:34:17.845  INFO 18808 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-26 18:34:17.849  INFO 18808 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-26 18:34:17.865  INFO 18808 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
